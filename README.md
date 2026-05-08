@@ -29,9 +29,6 @@ Open `index.html` in a browser. No build step is required.
 └── index.html
 ```
 
-## ATS Keywords Covered
-
-Digital products, digital services, reporting, dashboards, analytics, operational insights, product performance, quality assurance, KPI reporting, stakeholder insights, service reliability, product operations.
 
 ## Business Scenario
 
