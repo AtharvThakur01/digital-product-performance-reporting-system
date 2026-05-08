@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Product Performance & Reporting System</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Digital Products & Services</p>
+        <h1>Product Performance Reporting System</h1>
+      </div>
+      <div class="controls">
+        <label>
+          Product
+          <select id="productFilter">
+            <option value="all">All products</option>
+          </select>
+        </label>
+        <label>
+          Period
+          <select id="periodFilter">
+            <option value="current">Current month</option>
+            <option value="previous">Previous month</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section id="scorecards" class="scorecard-grid" aria-label="Product performance scorecards"></section>
+
+      <section class="workbench">
+        <article class="panel span-2">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Operational insights</p>
+              <h2>Service quality by product</h2>
+            </div>
+            <span id="healthBadge" class="badge"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Adoption</th>
+                  <th>Task success</th>
+                  <th>Defects</th>
+                  <th>SLA</th>
+                  <th>Health</th>
+                </tr>
+              </thead>
+              <tbody id="productTable"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Quality assurance</p>
+              <h2>Risk queue</h2>
+            </div>
+          </div>
+          <div id="riskQueue" class="risk-list"></div>
+        </article>
+      </section>
+
+      <section class="workbench">
+        <article class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Reporting workflow</p>
+              <h2>Weekly operating rhythm</h2>
+            </div>
+          </div>
+          <ol id="workflow" class="timeline"></ol>
+        </article>
+
+        <article class="panel span-2">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Dashboard</p>
+              <h2>Performance drivers</h2>
+            </div>
+          </div>
+          <div id="driverGrid" class="driver-grid"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="src/app.js" defer></script>
+  </body>
+</html>

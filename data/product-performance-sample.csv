@@ -1,0 +1,5 @@
+product,month,adoption_rate,task_success_rate,open_defects,sla_attainment,nps,incidents,owner
+Mobile App,2026-04,74,91,18,98.2,42,2,Growth Product
+Customer Portal,2026-04,63,84,31,96.1,31,5,Self Service
+Billing Console,2026-04,58,88,15,99.1,39,1,Revenue Ops
+Support Hub,2026-04,47,79,27,94.4,24,7,Service Ops
